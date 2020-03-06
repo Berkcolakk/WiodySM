@@ -1,0 +1,5 @@
+C:\Users\berkc\source\repos\WiodySM\WiodySM.Updater\obj\Debug\WiodySM.Updater.csprojAssemblyReference.cache
+C:\Users\berkc\source\repos\WiodySM\WiodySM.Updater\obj\Debug\WiodySM.Updater.frmUpdater.resources
+C:\Users\berkc\source\repos\WiodySM\WiodySM.Updater\obj\Debug\WiodySM.Updater.Properties.Resources.resources
+C:\Users\berkc\source\repos\WiodySM\WiodySM.Updater\obj\Debug\WiodySM.Updater.csproj.GenerateResource.cache
+C:\Users\berkc\source\repos\WiodySM\WiodySM.Updater\obj\Debug\WiodySMUpdater.exe.licenses

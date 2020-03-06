@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F819D194-8D7F-4944-B797-7235E092460A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WiodySM.UI</RootNamespace>
+    <AssemblyName>OskarNET</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>oskar_holding_logo__1__klW_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.2" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.2" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2" />
+    <Reference Include="DevExpress.Printing.v17.2.Core" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0001.Designer.cs">
+      <DependentUpon>def0001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0002.Designer.cs">
+      <DependentUpon>def0002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0003.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0003.Designer.cs">
+      <DependentUpon>def0003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0004.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0004.Designer.cs">
+      <DependentUpon>def0004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0005.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0005.Designer.cs">
+      <DependentUpon>def0005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0006.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0006.Designer.cs">
+      <DependentUpon>def0006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0007.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0007.Designer.cs">
+      <DependentUpon>def0007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0008.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0008.Designer.cs">
+      <DependentUpon>def0008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0009.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0009.Designer.cs">
+      <DependentUpon>def0009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0010.Designer.cs">
+      <DependentUpon>def0010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0011.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0011.Designer.cs">
+      <DependentUpon>def0011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Definition\def0012.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Definition\def0012.Designer.cs">
+      <DependentUpon>def0012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Payoff\PayoffAlvReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Payoff\PayoffConsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Payoff\PayoffControlReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Payoff\pyf0002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Payoff\pyf0002.Designer.cs">
+      <DependentUpon>pyf0002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Payoff\pyf0001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Payoff\pyf0001.Designer.cs">
+      <DependentUpon>pyf0001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0014.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0014.Designer.cs">
+      <DependentUpon>prj0014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0013.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0013.Designer.cs">
+      <DependentUpon>prj0013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0012.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0012.Designer.cs">
+      <DependentUpon>prj0012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0011.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0011.Designer.cs">
+      <DependentUpon>prj0011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0010.Designer.cs">
+      <DependentUpon>prj0010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0009.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0009.Designer.cs">
+      <DependentUpon>prj0009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0008.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0008.Designer.cs">
+      <DependentUpon>prj0008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0007.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0007.Designer.cs">
+      <DependentUpon>prj0007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0006.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0006.Designer.cs">
+      <DependentUpon>prj0006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0005.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0005.Designer.cs">
+      <DependentUpon>prj0005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0004.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0004.Designer.cs">
+      <DependentUpon>prj0004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0002.Designer.cs">
+      <DependentUpon>prj0002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0001.Designer.cs">
+      <DependentUpon>prj0001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0003.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectManagement\prj0003.Designer.cs">
+      <DependentUpon>prj0003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\PayoffCover.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\PayoffCover.Designer.cs">
+      <DependentUpon>PayoffCover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\PayoffReportTotalEnd.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\PayoffReportTotalEnd.Designer.cs">
+      <DependentUpon>PayoffReportTotalEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\rprt0002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\rprt0002.Designer.cs">
+      <DependentUpon>rprt0002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\rprt0001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\rprt0001.Designer.cs">
+      <DependentUpon>rprt0001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\PayoffExtractReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\PayoffExtractReport.Designer.cs">
+      <DependentUpon>PayoffExtractReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\rprt0003.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\rprt0003.Designer.cs">
+      <DependentUpon>rprt0003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\tesst.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\tesst.Designer.cs">
+      <DependentUpon>tesst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\TestReportDeduc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\TestReportDeduc.Designer.cs">
+      <DependentUpon>TestReportDeduc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StockAction\stck0001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StockAction\stck0001.Designer.cs">
+      <DependentUpon>stck0001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StockAction\stck0003.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StockAction\stck0003.Designer.cs">
+      <DependentUpon>stck0003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StockAction\stck0002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StockAction\stck0002.Designer.cs">
+      <DependentUpon>stck0002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StockAction\stck0004.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StockAction\stck0004.Designer.cs">
+      <DependentUpon>stck0004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ssss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ssss.Designer.cs">
+      <DependentUpon>ssss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\BarcodeHelper.cs" />
+    <Compile Include="Utilities\EmailHelper.cs" />
+    <Compile Include="Utilities\ExcelHelper.cs" />
+    <Compile Include="Utilities\Helpers.cs" />
+    <Compile Include="Utilities\NavBarFilter.cs" />
+    <Compile Include="Utilities\RawPrinterHelper.cs" />
+    <Compile Include="Utilities\StaticTypes.cs" />
+    <Compile Include="Utilities\StockHelper.cs" />
+    <Compile Include="ViewModels\ExploreVM.cs" />
+    <Compile Include="ViewModels\PayoffDeductionVM.cs" />
+    <Compile Include="ViewModels\PayoffIcmalVM.cs" />
+    <Compile Include="ViewModels\PayoffControlVM.cs" />
+    <Compile Include="ViewModels\PayoffAlvVM.cs" />
+    <Compile Include="ViewModels\PayoffReportVM.cs" />
+    <Compile Include="ViewModels\ReportPayoffExtract.cs" />
+    <Compile Include="ViewModels\RoleMenuVM.cs" />
+    <Compile Include="ViewModels\StockActionVM.cs" />
+    <Compile Include="ViewModels\TransferVM.cs" />
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0001.resx">
+      <DependentUpon>def0001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0002.resx">
+      <DependentUpon>def0002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0003.resx">
+      <DependentUpon>def0003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0004.resx">
+      <DependentUpon>def0004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0005.resx">
+      <DependentUpon>def0005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0006.resx">
+      <DependentUpon>def0006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0007.resx">
+      <DependentUpon>def0007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0008.resx">
+      <DependentUpon>def0008.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0009.resx">
+      <DependentUpon>def0009.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0010.resx">
+      <DependentUpon>def0010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0011.resx">
+      <DependentUpon>def0011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Definition\def0012.resx">
+      <DependentUpon>def0012.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payoff\PayoffAlvReport.resx">
+      <DependentUpon>PayoffAlvReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payoff\PayoffConsReport.resx">
+      <DependentUpon>PayoffConsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payoff\PayoffControlReport.resx">
+      <DependentUpon>PayoffControlReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payoff\pyf0002.resx">
+      <DependentUpon>pyf0002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payoff\pyf0001.resx">
+      <DependentUpon>pyf0001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0014.resx">
+      <DependentUpon>prj0014.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0013.resx">
+      <DependentUpon>prj0013.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0012.resx">
+      <DependentUpon>prj0012.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0011.resx">
+      <DependentUpon>prj0011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0010.resx">
+      <DependentUpon>prj0010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0009.resx">
+      <DependentUpon>prj0009.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0008.resx">
+      <DependentUpon>prj0008.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0007.resx">
+      <DependentUpon>prj0007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0006.resx">
+      <DependentUpon>prj0006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0005.resx">
+      <DependentUpon>prj0005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0004.resx">
+      <DependentUpon>prj0004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0002.resx">
+      <DependentUpon>prj0002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0001.resx">
+      <DependentUpon>prj0001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectManagement\prj0003.resx">
+      <DependentUpon>prj0003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\PayoffCover.resx">
+      <DependentUpon>PayoffCover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\PayoffReportTotalEnd.resx">
+      <DependentUpon>PayoffReportTotalEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\rprt0002.resx">
+      <DependentUpon>rprt0002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\rprt0001.resx">
+      <DependentUpon>rprt0001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\PayoffExtractReport.resx">
+      <DependentUpon>PayoffExtractReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\rprt0003.resx">
+      <DependentUpon>rprt0003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\tesst.resx">
+      <DependentUpon>tesst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\TestReportDeduc.resx">
+      <DependentUpon>TestReportDeduc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StockAction\stck0001.resx">
+      <DependentUpon>stck0001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StockAction\stck0003.resx">
+      <DependentUpon>stck0003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StockAction\stck0002.resx">
+      <DependentUpon>stck0002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StockAction\stck0004.resx">
+      <DependentUpon>stck0004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ssss.resx">
+      <DependentUpon>ssss.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WiodySM.Data\WiodySM.Data.csproj">
+      <Project>{ba2b174e-6a02-4a91-a05a-43a192f54ac8}</Project>
+      <Name>WiodySM.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.2.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="oskar_holding_logo__1__klW_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
